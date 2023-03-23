@@ -1,0 +1,130 @@
+/* CSS by Marc Nettles for CSCI3150*/
+
+/* Resource used to combine grid and flexbox: https://wpengine.com/resources/combine-flexbox-and-css-grids-for-layouts-how-to/*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Poppins:wght@300&display=swap');
+
+h1, h2 {
+  font-family: Poppins;
+  color: orange;
+}
+
+p {
+  font-family: Inter;
+  color: white;
+}
+
+ul {
+  border: 4px solid orange;
+}
+
+ol {
+  border: 5px solid purple;
+  
+}
+
+ol, ul {
+  font-family: Inter;
+  padding: 5px 20px;
+  border-radius: 4px;
+  color: #E7DBD6;
+}
+
+h1, strong {
+  color: white;
+}
+
+em {
+  font-family: Poppins;
+  color: yellow;
+  padding: 10px;
+}
+   
+h1 {
+  padding: 25px 100px;
+  margin: auto;
+  text-align: center;
+}
+
+body{
+  background: gray;
+}
+
+header{
+  grid-area: header;
+  background: #3E362F;
+  border-bottom: 3px solid orange;
+  display: flex;
+  flex-direction: column;
+  
+}
+
+nav {
+  height: 50px;
+  flex: 100%;
+}
+
+nav ul{
+  padding: 0;
+  list-style-type: none;
+  flex: 2;
+  display: flex;
+  border-bottom: 1px orange solid;
+}
+nav li{
+  display:inline;
+  text-align: center;
+  flex: 1;
+}
+nav a{
+  display: inline-block;
+  font-size: 1rem;
+  height: 3rem;
+  line-height: 3;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: white;
+}
+
+nav ul{
+  display:flex;
+}
+main{
+  grid-area: main;
+  background: #56514F;
+  border-top: 3px solid white;
+}
+
+#aside_L{
+  grid-area: aside_L;
+  background: #5A5D59;
+  border-top: 3px solid white;
+}
+#aside_R{
+  grid-area: aside_R;
+  background: #5A5D59;
+  border-top: 3px solid white;
+}
+footer {
+  grid-area: footer;
+  background: #E7DBD6;
+  border-top: 3px solid orange;
+}
+
+.container{
+  display:grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-areas:
+  "header header header"
+  "aside_L main aside_R"
+  "aside_L main aside_R"
+  "aside_L main aside_R"
+  "footer footer footer";
+  max-width: 1200px;
+  margin: auto;
+  height: 100vh;
+  width: 100vw;
+  grid-column-gap: 10px;
+  grid-row-gap: 20px;
+}
