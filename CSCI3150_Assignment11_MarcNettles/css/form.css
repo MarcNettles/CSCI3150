@@ -15,5 +15,94 @@ div#formcol1 {
 }
 
 
+/* End css provided by class */
+
+
+/* Importing font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Poppins:wght@300&family=Roboto&display=swap');
+
+label {
+	margin-right: .3em;
+	width: 6.0em;
+	display: inline-block;
+	color: black;
+}
+ul label{
+	text-align: right;
+}
+
+#formcol1 li{
+	list-style: none;
+}
+
+input[type="radio"]{
+	margin-right: 0;
+}
+
+#presentationType label{
+	width: 50px;
+}
+
+body{
+	background-color: #FEFBEF;
+}
+
+h1{
+	font-family: "Roboto", sans-serif;
+	text-align: center;
+	
+}
+
+h1, legend{
+	color: #1D438A;
+}
+
+legend{
+	font-family: "Roboto", sans-serif;
+	font-size:large;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+span.requiredAst{
+	color:#0300FF;
+}
+fieldset{
+	border:black solid 2px;
+}
+li{
+	padding-bottom: 3px;
+}
+p, li{
+	font-family: "Roboto", sans-serif;
+}
+p.submit-button{
+	text-align: left;
+	
+}
+p.submit-button input{
+	margin-left: 40px;
+	background: #0300FF;
+	color: white;
+	border: black 1px solid;
+	scale: 1.15;
+	font-family: "Roboto", sans-serif;
+}
+
+#presentationType span{
+	padding-left: 20px;
+}
+
+
+/* Adding highlight of current focus */
+
+select:focus, select:active, input:focus, input:active, input:focus + label, input:active + label, label[for]:focus, label[for]:active{
+	color:#FFF !important;
+	background-color: #0300FF !important;
+}
+
+#formcol1 input.reqfield{
+	background:#FF9;
+}
 
 /* end of form css */
